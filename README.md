@@ -48,4 +48,44 @@
 | Pull an image from a registry | docker pull <image_name> | (Same) |
 | Execute a command in a running container |docker exec -it <container_id> <command> | (same) |
 
+## Installing Docker(Ubuntu).
+
+1. Update your system `sudo apt update`
+
+![](./img/Pasted%20image.png)
+
+2. Install essential packages `sudo apt-get install ca-certificates curl gnupg` certificate authorities inclusive.
+
+![](./img/Pasted%20image%20(2).png)
+
+3. Create a dir for keyring with permision `sudo install -m 0755 -d /etc/apt/keyrings`
+
+![](./img/Pasted%20image%20(3).png)
+
+4. Download docker GPG key `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
+
+![](./img/Pasted%20image%20(5).png)
+
+5. Set permissions for all users on the Docker GPG key file within APT directory `sudo chmod a+r /etc/apt/keyrings/docker.gpg`
+
+![](./img/Pasted%20image%20(6).png)
+
+6. Create a Docker APT repository configuration entry for Ubuntu system `echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
+
+  ![](./img/Pasted%20image%20(7).png)
+
+7. Update the syste. `sudo apt update`
+
+![](./img/Pasted%20image%20(8).png)
+
+8. Install latest version of docker `sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+
+![](./img/Pasted%20image%20(9).png)
+
+9. Verify That docker has been installed successfully `sudo systemctl status docker`
+![](./img/Pasted%20image%20(10).png)
+
 
