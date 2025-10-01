@@ -88,4 +88,46 @@
 9. Verify That docker has been installed successfully `sudo systemctl status docker`
 ![](./img/Pasted%20image%20(10).png)
 
+10. Allow other users run docker commands `sudo usermod -aG docker <user_name>`
 
+![](./img/Pasted%20image%20(11).png)
+
+
+### Running the 'Hello World' container
+
+1. Run `docker run hello-world`
+
+![](./img/Pasted%20image%20(12).png)
+
+### Docker commands
+* View docker images in your local computer. Run `docker images`
+
+![](./img/Pasted%20image%20(13).png)
+
+* List running containers. Run `docker ps`
+
+![](./img/Pasted%20image%20(14).png)
+
+*  List all containers (running and stopped) Run `docker ps -a`
+
+![](./img/Pasted%20image%20(14).png)
+
+* Pull docker images from registry. ` docker pull <image-name>`
+
+![](./img/Pasted%20image%20(15).png)
+
+![](./img/Pasted%20image%20(16).png)
+
+* Push a local image to docker hub. Run `docker push your-username/image-name`
+
+* List all local images, run `docker images`
+
+![](./img/Pasted%20image%20(17).png)
+
+* To remove one or more images, run `docker rmi <image_id>`
+
+![](./img/Pasted%20image%20(18).png)
+
+* To stop a running container, run `docker stop <container_id>`\
+
+![](./img/Pasted%20image%20(19).png)
