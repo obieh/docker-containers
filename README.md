@@ -19,5 +19,33 @@
 | Docker Registry  | A service for storing and distributing Docker images (e.g., Docker Hub, or private registries). |
 
 
+## Common Docker Use Cases.
+
+#### Docker's consistency and isolation make it useful for many modern development challenges:
+
+* Modernizing Applications: Break down large, monolithic applications into smaller, independent microservices, each running in its own container.
+
+* Standardizing Environments: Eliminate the "it works on my machine" problem by ensuring your application runs identically on a colleague's laptop, a testing server, and a production data center.
+
+* Streamlining CI/CD: Accelerate Continuous Integration and Continuous Delivery (CI/CD) pipelines by using containers to create consistent and ephemeral build and test environments.
+
+* Running More Workloads: Due to their lightweight nature, Docker containers allow you to run more applications on the same hardware compared to bulkier virtual machines
+
+## Essential Docker Commands.
+
+### Here are some fundamental commands to get you started. The newer, object-based syntax is recommended for clarity.
+
+| Purpose | Command (New Syntax) | Command (Old Syntax) |
+|---------|----------------------|----------------------|
+| Run a container from an image | docker container run <image_name> | docker run <image_name> |
+| List running containers | docker container ls | docker ps |
+| List all containers (including stopped) | docker container ls -a | docker ps -a |
+| Stop a running container | docker container stop <container_id> | docker stop <container_id> |
+| Remove a stopped container | docker container rm <container_id> | docker rm <container_id> |
+| List downloaded images | docker image ls | docker images |
+| Remove an image | docker image rm <image_id> | ocker rmi <image_id> |
+| Build an image from a Dockerfile | docker build -t <image_name>:<tag> | (Same) |
+| Pull an image from a registry | docker pull <image_name> | (Same) |
+| Execute a command in a running container |docker exec -it <container_id> <command> | (same) |
 
 
