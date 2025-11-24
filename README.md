@@ -1,6 +1,6 @@
 # Docker and containers
 
-## A brief demonstration of dcoker and containers use case.
+## A brief demonstration of docker and containers use case.
 
 ### What is docker?
 
