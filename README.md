@@ -4,7 +4,7 @@
 
 ### What is docker?
 
-#### Docker is a platform that uses containers to make creating, deploying, and running applications easier. A container packages an application with all its necessary parts, ensuring it runs consistently across any machine with Docker installed
+#### Docker is a platform that uses containers to make creating, deploying, and running applications easier. A container packages an application with all its necessary parts, ensuring it runs consistently across any machine with Docker installed.
 
 
 #### Here is a quick overview of its core components and how they work together:
